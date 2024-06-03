@@ -21,3 +21,13 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
+
+document.querySelector('.hamburger').addEventListener('click', function() {
+	document.querySelector('.menu').classList.toggle('active');
+	document.querySelector('.hamburger').classList.toggle('cross-icon');
+});
+
+document.querySelector('.cross-icon').addEventListener('click', function() {
+	document.querySelector('.menu').classList.toggle('active');
+	document.querySelector('.cross-icon').classList.toggle('hamburger');
+});
